@@ -1,0 +1,15 @@
+import sys
+r = sys.stdin
+w = sys.stdout
+
+def isPrime(input):
+    for i in range(2,input):
+        if input % i == 0:
+            return False
+    return True
+
+testCase = r.readline()
+for test in range((int)testCase):
+    
+
+
