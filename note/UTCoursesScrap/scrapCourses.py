@@ -13,7 +13,7 @@ def buildDict(id,courseID,courseCode,courseName):
 	# result['codeCode'] = courseCode
 	result['courseName'] = courseName
 
-	
+	#Upload to Firebase
 	firebase.put('allCourses',result['courseID'],result['courseName'])
 
 	return result
