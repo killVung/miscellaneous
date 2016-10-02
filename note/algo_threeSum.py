@@ -10,6 +10,7 @@ def Three_Sum(list,a):
     l,h = 0,len(list) - 1
     for i in list:
         for _ in range(len(list)):
+            #Make either of the pointers are on the current iterated index
             if list[l] != i and list[h] != i:
                 currentSum = list[l] + list[h] + i
                 if currentSum == a:
@@ -20,8 +21,8 @@ def Three_Sum(list,a):
                     h -= 1
                 else:
                     return None
-
             else:
+                #Check which of the pointer is on the current itereated index
                 if list[l] == i:
                     l += 1
                 else:
