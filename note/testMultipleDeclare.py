@@ -1,1 +1,0 @@
-el,eu = "mendoza","Mendoza"
